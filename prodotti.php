@@ -8,7 +8,12 @@ require_once __DIR__ . '/categoria.php';
     public $image;
     public $price;
 
-    public function __constract($_name, $_categoria, $_image, $_price){
+    public function __construct(
+      String $_name,
+      Float $_price,
+      String $_image,
+      Category $_categoria,
+      ){
       $this->name = $_name;
       $this->categoria = $_categoria;
       $this->image = $_image;

@@ -16,14 +16,18 @@
   <h1 class="text-center">Store Animali</h1>  
     <div class="container">
       <div class="row row-cols-2">
-        <div class="col">
+        <?php foreach($prodotti as $prodotto): ?>
+        <div class="col-4 p-2">
           <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="<?php echo prodotti->$getImage()  ?>" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">esempio</h5>
-            <p class="card-text">esempio</p>
+            <h5 class="card-title">Nome prodotto: </h5>
+            <p class="card-text">Categoria: </p>
+            <p class="card-text">Prezzo:</p>
+            <p class="card-text">Esempio: </p>
             </div>
         </div>
+        <?php endforeach ?>
       </div>
     </div>
 
