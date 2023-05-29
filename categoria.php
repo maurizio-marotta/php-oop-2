@@ -1,0 +1,12 @@
+<?php
+
+class categoria {
+  public $name;
+  public $icone;
+
+
+  public function __constract($name, $icone){
+    $this->name = $name;
+    $this->icone = $icone;  
+  }
+}
