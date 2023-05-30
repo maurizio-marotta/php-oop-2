@@ -5,7 +5,8 @@ class Category {
   public $icone;
 
 
-  public function __constract($name, $icone){
+  public function __construct($_name, $_icone){
+
     $this->name = $_name;
     $this->icone = $_icone;  
   }

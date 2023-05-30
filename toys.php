@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/toys.php';
+require_once __DIR__ . '/prodotti.php';
 
 class toys extends prodotti {
   public $features;

@@ -32,7 +32,7 @@
           <img src="<?php echo $prodotto->getImage()?>" class="card-img-top" alt="<?php echo $prodotto->getName()?>">
             <div class="card-body">
             <h5 class="card-title">Nome prodotto: <?php echo $prodotto->getName()?></h5>
-            <p class="card-text">Categoria: <?php echo $prodotto->getCategoria()->icone?><?php echo $prodotto->getCategoria()->name?></p>
+            <p class="card-text">Categoria: <i class="<?php echo $prodotto->getCategoria()->icone ?>"></i><?php echo $prodotto->getCategoria()->name ?> </p>
             <p class="card-text">Prezzo: &euro;<?php echo $prodotto->getPrice()?></p>
             <?php if(get_class($prodotto) === 'Food'):?>
               <p class="card-text">Peso: <?php echo $prodotto->peso?></p>
@@ -46,7 +46,7 @@
 
             <?php if(get_class($prodotto) === 'accessori'):?>
               <p class="card-text">Dimensioni: <?php echo $prodotto->materiale?></p>
-              <p class="card-text">Materiale: <?php echo $prodotto->size?></p>
+              <p class="card-text">Materiale: <?php echo $prodotto->materiale?></p>
             <?php endif; ?>
             </div>
         </div>

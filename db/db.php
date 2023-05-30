@@ -1,11 +1,13 @@
 <?php
 
 $categorie = [
-  'cane' => new Category('cane', 'fa-solid fa-dog'),
-  'gatto' => new Category('gatto', 'fa-solid fa-cat'),
-  'pesce' => new Category('pesce', 'fa-solid fa-fish'),
-  'uccelli' => new Category('uccelli', 'fa-solid fa-bird')
+  'cane' => new Category('Cane', 'fa-solid fa-dog'),
+  'gatto' => new Category('Gatto', 'fa-solid fa-cat'),
+  'pesce' => new Category('Pesce', 'fa-solid fa-fish'),
+  'uccelli' => new Category('Uccelli', 'fa-solid fa-bird')
 ];
+
+var_dump($categorie['cane']);
 
 
 
