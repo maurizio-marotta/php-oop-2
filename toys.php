@@ -11,8 +11,8 @@ class toys extends prodotti {
     Float $_price,
     String $_image,
     Category $_categoria,
-    String $features,
-    String $size
+    String $_features,
+    String $_size
   ){
 parent:: __construct($_name, $_price, $_image, $_categoria);
 

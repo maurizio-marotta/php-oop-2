@@ -1,6 +1,6 @@
 <?php
 
-class categoria {
+class Category {
   public $name;
   public $icone;
 
@@ -9,4 +9,4 @@ class categoria {
     $this->name = $name;
     $this->icone = $icone;  
   }
-}
+} 

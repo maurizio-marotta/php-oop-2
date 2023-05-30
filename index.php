@@ -29,12 +29,11 @@
         <?php foreach($prodotti as $prodotto): ?>
         <div class="col-4 p-2">
           <div class="card" style="width: 18rem;">
-            <img src="<?php echo prodotti->$getImage()  ?>" class="card-img-top" alt="...">
+          <img src="<?php echo $prodotto->getImage()?>" class="card-img-top" alt="<?php echo $prodotto->getName()?>">
             <div class="card-body">
-            <h5 class="card-title">Nome prodotto: </h5>
-            <p class="card-text">Categoria: </p>
-            <p class="card-text">Prezzo:</p>
-            <p class="card-text">Esempio: </p>
+            <h5 class="card-title">Nome prodotto: <?php echo $prodotto->getName()?></h5>
+            <p class="card-text">Categoria:</p>
+            <p class="card-text">Prezzo: <?php echo $prodotto->getPrice()?></p>
             </div>
         </div>
         <?php endforeach ?>

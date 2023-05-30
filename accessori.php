@@ -11,8 +11,8 @@ class accessori extends prodotti {
     Float $_price,
     String $_image,
     Category $_categoria,
-    String $size,
-    String $materiale
+    String $_size,
+    String $_materiale
   ){
 parent:: __construct($_name, $_price, $_image, $_categoria);
 

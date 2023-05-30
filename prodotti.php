@@ -20,11 +20,11 @@ require_once __DIR__ . '/categoria.php';
       $this->price = $_price;
     }
 
-    public function setname(){
+    public function setName(){
       $this->name = $_name;
     }
     
-    public function setcategoria(){
+    public function setCategoria(){
       $this->categoria = $_categoria;
     }
 
@@ -32,17 +32,17 @@ require_once __DIR__ . '/categoria.php';
       $this->image = $_image;
     } 
 
-    public function setprice(){
+    public function setPrice(){
       $this->price = $_price;
     } 
 
 
 
-    public function getname(){
+    public function getName(){
       return $this->name;
     }
     
-    public function getcategoria(){
+    public function getCategoria(){
       return $this->categoria;
     }
 
@@ -50,7 +50,7 @@ require_once __DIR__ . '/categoria.php';
       return $this->image;
     } 
 
-    public function getprice(){
+    public function getPrice(){
       return $this->price;
     } 
   }

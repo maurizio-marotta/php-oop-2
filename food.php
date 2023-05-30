@@ -11,8 +11,8 @@ class food extends prodotti {
     Float $_price,
     String $_image,
     Category $_categoria,
-    String $peso,
-    array $ngredienti
+    String $_peso,
+    array $_ingredienti
   ){
 parent:: __construct($_name, $_price, $_image, $_categoria);
 
