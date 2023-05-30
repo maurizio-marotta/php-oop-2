@@ -23,7 +23,7 @@
   <title>Store Animali</title>
 </head>
 <body>
-  <h1 class="text-center">Store Animali</h1>  
+  <h1 class="text-center">Store Animali <i class="fa-solid fa-bird"></i></h1>  
     <div class="container">
       <div class="row row-cols-2">
         <?php foreach($prodotti as $prodotto): ?>
@@ -32,8 +32,22 @@
           <img src="<?php echo $prodotto->getImage()?>" class="card-img-top" alt="<?php echo $prodotto->getName()?>">
             <div class="card-body">
             <h5 class="card-title">Nome prodotto: <?php echo $prodotto->getName()?></h5>
-            <p class="card-text">Categoria:</p>
-            <p class="card-text">Prezzo: <?php echo $prodotto->getPrice()?></p>
+            <p class="card-text">Categoria: <?php echo $prodotto->getCategoria()->icone?><?php echo $prodotto->getCategoria()->name?></p>
+            <p class="card-text">Prezzo: &euro;<?php echo $prodotto->getPrice()?></p>
+            <?php if(get_class($prodotto) === 'Food'):?>
+              <p class="card-text">Peso: <?php echo $prodotto->peso?></p>
+              <p class="card-text">Ingredienti: <?php echo implode($prodotto->ingredienti)?></p>
+            <?php endif; ?>
+
+            <?php if(get_class($prodotto) === 'toys'):?>
+              <p class="card-text">Caratteristiche: <?php $prodotto ->features?></p>
+              <p class="card-text">Dimensioni: <?php echo $prodotto->size?></p>
+            <?php endif; ?>
+
+            <?php if(get_class($prodotto) === 'accessori'):?>
+              <p class="card-text">Dimensioni: <?php echo $prodotto->materiale?></p>
+              <p class="card-text">Materiale: <?php echo $prodotto->size?></p>
+            <?php endif; ?>
             </div>
         </div>
         <?php endforeach ?>

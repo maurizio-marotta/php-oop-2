@@ -6,7 +6,7 @@ class Category {
 
 
   public function __constract($name, $icone){
-    $this->name = $name;
-    $this->icone = $icone;  
+    $this->name = $_name;
+    $this->icone = $_icone;  
   }
 } 
