@@ -7,7 +7,7 @@ $categorie = [
   'uccelli' => new Category('Uccelli', 'fa-solid fa-bird')
 ];
 
-var_dump($categorie['cane']);
+//var_dump($categorie['cane']);
 
 
 
